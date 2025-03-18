@@ -7,6 +7,9 @@ export default function Player() {
 
     function handleClick(){
         setPlayerName(playerName.current.value)
+        //NOTE: In this case this if okey, to clear an input field, after submitting
+        // But you should control the DOM through react
+        playerName.current.value = ""
     }
 
   return (
